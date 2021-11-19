@@ -1,4 +1,3 @@
-
 .border {
     border: 1px #000 solid;
 }
@@ -8,6 +7,16 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+
+}
+
+a {
+    color: #2aa1b7;
+}
+
+a:hover {
+    color: #fff;
+    transition: color .8s;
 }
 
 /* filters */
@@ -30,11 +39,10 @@ body {
     margin: 0;
     padding: 0;
 
-    background-color: #fff;
+    background-color: #171c20;
     color: #aaaaaa;
-
-    background: #171c20;
 }
+
 
 .container {
     max-width: 1024px;
@@ -151,6 +159,38 @@ body {
     transition: color .8s;
 }
 
+/* animalition fo <a> */
+.a_backgroud_animation::before {
+    transform: scaleY(0);
+    transform-origin: top right;
+}
+
+.a_backgroud_animation:hover::before {
+    transform: scaleY(1);
+    transform-origin: bottom left;
+}
+
+.a_backgroud_animation::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background-color: #2aa1b7;
+    opacity: .8;
+    z-index: -1;
+    transition: transform .3s ease;
+
+}
+
+.a_backgroud_animation {
+    position: relative;
+
+}
+
 .active_nli a {
 
     color: #fff;
@@ -238,6 +278,7 @@ main {
 
 .content_block {
     max-width: 48%;
+    width: 48%;
     height: auto;
 
     margin: 5px 5px;
@@ -259,11 +300,29 @@ main {
     color: aliceblue;
 }
 
+
+
 .content_block p {
     padding: 0.3rem 0.5rem 0.3rem 0.5rem;
 }
 
-/* FOOTER */
+.develop_logoBlock {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 300px;
+    opacity: .1;
+    align-items: center;
+}
+
+.develop_logo {
+    color: #2aa1b7;
+
+    font-size: 7rem;
+}
+
+/*  ========== FOOTER */
 .footer {
     width: 100%;
     height: 2.5rem;
@@ -302,7 +361,7 @@ address a:hover {
 /* CONTACT.HTML */
 .contact_block {
 
-
+    text-align: center;
 
     width: 100%;
     height: 250px;
@@ -315,6 +374,15 @@ address a:hover {
     align-content: center;
 }
 
+.contact_block div {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.contact_block div a {
+    margin-right: 8px;
+}
 
 .img_contact_link {
     width: 3rem;
@@ -325,7 +393,8 @@ address a:hover {
 
 .img_contact_link:hover {
     width: 3.1rem;
-} 
+}
+
 .contact_link {}
 
 .contact_link:hover {}
@@ -452,165 +521,167 @@ address a:hover {
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
     /* For landscape layouts only */
-=======
-.border {
-    border: 1px #000 solid;
-}
+    .border {
+        border: 1px #000 solid;
+    }
 
-* {
-    box-sizing: border-box
-}
+    * {
+        box-sizing: border-box
+    }
 
-/*       */
-ul {
-    list-style: none;
-}
+    /*       */
+    ul {
+        list-style: none;
+    }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    body {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
 
-    margin: 0;
-    padding: 0;
+        margin: 0;
+        padding: 0;
 
-}
+    }
 
-.container {
-    max-width: 1024px;
-    height: 100%;
+    .container {
+        max-width: 1024px;
+        height: 100%;
 
-    margin: 0 auto;
+        margin: 0 auto;
 
-    position: relative;
-}
+        position: relative;
+    }
 
-.home_logoIMG {
-    width: 2rem;
-    height: auto;
-}
+    .home_logoIMG {
+        width: 2rem;
+        height: auto;
+    }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 52px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-
-    background: #fff;
-
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(34, 60, 80, 0.12);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(34, 60, 80, 0.12);
-    box-shadow: 0px 3px 5px 0px rgba(34, 60, 80, 0.12);
-}
-
-.nav_links {
-    display: flex;
-    justify-content: flex-end;
-
-    position: absolute;
-
-    right: 10px;
-    max-width: 340px;
+    .nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 52px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 2;
 
 
 
-}
+        -webkit-box-shadow: 0px 3px 5px 0px rgba(34, 60, 80, 0.12);
+        -moz-box-shadow: 0px 3px 5px 0px rgba(34, 60, 80, 0.12);
+        box-shadow: 0px 3px 5px 0px rgba(34, 60, 80, 0.12);
+    }
 
-/* toggle */
-.burger_btn img,
-.burger_close img {
-    /* display: none; */
+    .nav_links {
+        display: flex;
+        justify-content: flex-end;
 
-    position: absolute;
-    right: 6px;
-    top: 9px;
-    width: 2rem;
-    height: 2rem;
+        position: absolute;
 
-    display: none;
-}
+        right: 10px;
+        max-width: 340px;
 
 
 
+    }
 
-.checkbox {
-    position: absolute;
-    right: 3px;
-    top: 6px;
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    z-index: 2;
+    /* toggle */
+    .burger_btn img,
+    .burger_close img {
+        /* display: none; */
 
-    display: none;
-}
+        position: absolute;
+        right: 6px;
+        top: 9px;
+        width: 2rem;
+        height: 2rem;
 
-.checkbox:checked~.nav_links {
-    display: flex;
-
-    /* display: none; */
-}
-
-.checkbox:checked~.burger_btn img {
-    opacity: 0;
-    transition: all 2s;
-
-    transform: rotate(180deg);
-
-}
-
-.checkbox:checked~.burger_close img {
-    opacity: 1;
-    display: inline-block;
-    transition: transform 2s ease-in;
-    width: 1.5rem;
-    height: 1.5rem;
-    transform: rotate(90deg);
-    top: 12px;
-    right: 11px;
-
-}
+        display: none;
+    }
 
 
-.nav_links_item {
-    font-size: 1.2rem;
-    font-weight: 600;
-
-    margin: 0 .2rem;
-
-}
-
-/* MAIN */
-
-main {
-    width: 100%;
 
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    .checkbox {
+        position: absolute;
+        right: 3px;
+        top: 6px;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        z-index: 2;
+
+        display: none;
+    }
+
+    .checkbox:checked~.nav_links {
+        display: flex;
+
+        /* display: none; */
+    }
+
+    .checkbox:checked~.burger_btn img {
+        opacity: 0;
+        transition: all 2s;
+
+        transform: rotate(180deg);
+
+    }
+
+    .checkbox:checked~.burger_close img {
+        opacity: 1;
+        display: inline-block;
+        transition: transform 2s ease-in;
+        width: 1.5rem;
+        height: 1.5rem;
+        transform: rotate(90deg);
+        top: 12px;
+        right: 11px;
+
+    }
 
 
-}
+    .nav_links_item {
+        font-size: 1.2rem;
+        font-weight: 600;
 
-.content_block {
-    max-width: 400px;
-    height: auto;
+        margin: 0 .2rem;
 
-    margin: 5px 5px;
-    padding: 2px
-}
+    }
 
-/*  MEDIA */
+    /* MAIN */
 
-/* DESCTOP
+    main {
+        width: 100%;
+
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+
+    }
+
+    .content_block {
+        max-width: 400px;
+        height: auto;
+
+        margin: 5px 5px;
+        padding: 2px
+    }
+
+    
+
+    /*  MEDIA */
+
+    /* DESCTOP
 
 @media screen and (min-width:768px and max-width: 1024px) {
     .nav_links {
@@ -660,82 +731,82 @@ main {
 } */
 
 
-/* default styles here for older browsers. 
+    /* default styles here for older browsers. 
        I tend to go for a 600px - 960px width max but using percentages
     */
-@media only screen and (min-width: 960px) {
-    /* styles for browsers larger than 960px; */
-}
+    @media only screen and (min-width: 960px) {
+        /* styles for browsers larger than 960px; */
+    }
 
-@media only screen and (min-width: 1440px) {
-    /* styles for browsers larger than 1440px; */
-}
+    @media only screen and (min-width: 1440px) {
+        /* styles for browsers larger than 1440px; */
+    }
 
-@media only screen and (min-width: 2000px) {
-    /* for sumo sized (mac) screens */
-}
+    @media only screen and (min-width: 2000px) {
+        /* for sumo sized (mac) screens */
+    }
 
-@media only screen and (max-device-width: 480px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    @media only screen and (max-device-width: 480px) {
+        /* styles for mobile browsers smaller than 480px; (iPhone) */
 
-    .container {
-        max-width: 400px;
+        .container {
+            max-width: 400px;
+        }
+
+
+        .nav_links {
+            display: none;
+        }
+
+        .nav_links_item {
+            font-size: 1rem;
+        }
+
+
+        .checkbox {
+            display: inline-block;
+
+            opacity: 0;
+        }
+
+        .burger_btn img {
+            display: inline-block;
+        }
+
+        .nav_links {
+            margin-right: 48px;
+            width: 100%;
+        }
     }
 
 
-    .nav_links {
-        display: none;
+
+
+
+    @media only screen and (device-width: 768px) {
+        /* default iPad screens */
+
+        .nav_links {
+            display: flex;
+
+
+        }
     }
 
-    .nav_links_item {
-        font-size: 1rem;
-    }
+    /* different techniques for iPad screening */
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+        /* For portrait layouts only */
 
-
-    .checkbox {
-        display: inline-block;
-
-        opacity: 0;
-    }
-
-    .burger_btn img {
-        display: inline-block;
-    }
-
-    .nav_links {
-        margin-right: 48px;
-        width: 100%;
-    }
-}
-
-
-
-
-
-@media only screen and (device-width: 768px) {
-    /* default iPad screens */
-
-    .nav_links {
-        display: flex;
-
-
-    }
-}
-
-/* different techniques for iPad screening */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-    /* For portrait layouts only */
-
-    .nav_links {
-        display: flex;
-        /* 
+        .nav_links {
+            display: flex;
+            /* 
         position: absolute;
 
         right: 6px; */
+        }
     }
-}
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    /* For landscape layouts only */
->>>>>>> main
-}
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        /* For landscape layouts only */
+        >>>>>>>main
+    }
