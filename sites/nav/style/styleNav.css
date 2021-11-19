@@ -1,0 +1,741 @@
+
+.border {
+    border: 1px #000 solid;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* filters */
+
+.filter_white {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(332deg) brightness(104%) contrast(103%);
+
+}
+
+/*       */
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #fff;
+    color: #aaaaaa;
+
+    background: #171c20;
+}
+
+.container {
+    max-width: 1024px;
+    height: 100%;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+
+/* SHADOW */
+
+.shadow {
+    -webkit-box-shadow: 0px 20px 15px 5px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 20px 15px 5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 12px 15px 5px rgba(0, 0, 0, 0.16);
+}
+
+/* HEADER  */
+
+.header {
+    width: 100%;
+    height: auto;
+
+    background: #171c20;
+
+    -webkit-box-shadow: 0px 12px 15px 10px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 12px 15px 10px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 12px 15px 10px rgba(0, 0, 0, 0.16);
+}
+
+.SiteName {
+    padding: 3rem 0;
+    font-size: 4rem;
+    text-align: center;
+    color: #ffffff;
+    /* color: #0dc3e0; */
+
+}
+
+.Site_description {
+    text-align: center;
+    color: #2aa1b7;
+    padding: 0 0 1rem 0;
+}
+
+/* HEADER END */
+/*  NAVIGATION */
+
+.home_logoIMG {
+    width: 2rem;
+    height: auto;
+
+    /* Chenge color of logo */
+    filter: invert(51%) sepia(80%) saturate(385%) hue-rotate(142deg) brightness(91%) contrast(94%);
+}
+
+.home_logoIMG:hover {
+    /* orange */
+    /* filter: invert(59%) sepia(63%) saturate(3593%) hue-rotate(330deg) brightness(101%) contrast(91%); */
+    /* white */
+    filter: invert(100%) sepia(0%) saturate(7440%) hue-rotate(79deg) brightness(94%) contrast(109%);
+    transition: filter .8s;
+}
+
+.home_logoLink {
+    margin-left: 10px;
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 52px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    margin-bottom: 1rem;
+
+    background: #171c20;
+
+
+    -webkit-box-shadow: 0px 12px 15px 5px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 12px 15px 5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 12px 15px 5px rgba(0, 0, 0, 0.16);
+}
+
+.nav_links {
+    display: flex;
+    justify-content: flex-end;
+
+    position: absolute;
+
+    right: 10px;
+    max-width: 340px;
+}
+
+.nav_links_item a {
+    color: #2aa1b7;
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    padding: .6rem .5rem;
+}
+
+.nav_links_item a:hover {
+    color: #fff;
+
+    transition: color .8s;
+}
+
+.active_nli a {
+
+    color: #fff;
+}
+
+/* toggle */
+.burger_btn img,
+.burger_close img {
+
+
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    width: 2rem;
+    height: 2rem;
+
+    display: none;
+
+    filter: invert(73%) sepia(3%) saturate(17%) hue-rotate(344deg) brightness(94%) contrast(87%);
+}
+
+
+
+
+.checkbox {
+    position: absolute;
+    right: 3px;
+    top: 6px;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    z-index: 2;
+
+    display: none;
+}
+
+.checkbox:checked~.nav_links {
+    display: flex;
+
+    /* display: none; */
+}
+
+.checkbox:checked~.burger_btn img {
+    opacity: 0;
+    transition: all 2s;
+
+    transform: rotate(180deg);
+
+}
+
+.checkbox:checked~.burger_close img {
+    opacity: 1;
+    display: inline-block;
+    transition: transform 2s ease-in;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(90deg);
+    top: 12px;
+    right: 11px;
+
+}
+
+
+/* .nav_links_item {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    margin: 0 .2rem;
+
+} */
+
+/*  NAVIGATION END */
+/*  MAIN */
+
+main {
+    width: 100%;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.content_block {
+    max-width: 48%;
+    height: auto;
+
+    margin: 5px 5px;
+    padding: 2px;
+
+    -webkit-box-shadow: 0px 20px 15px 5px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 20px 15px 5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 12px 15px 5px rgba(0, 0, 0, 0.16);
+}
+
+.content_block img {
+    width: 100%;
+    height: auto;
+}
+
+.content_block h3 {
+    padding: .3rem;
+    font-size: 1.4rem;
+    color: aliceblue;
+}
+
+.content_block p {
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 2.5rem;
+
+    -webkit-box-shadow: 0px 20px 15px 5px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 20px 15px 5px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 12px 15px 5px rgba(0, 0, 0, 0.16);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+
+
+}
+
+/* addres */
+.footer a {
+    color: inherit;
+    padding: 1rem;
+}
+
+address a:hover {
+    color: #fff;
+
+    transition: color .8s;
+}
+
+/* FOOTER END */
+
+
+
+
+/* CONTACT.HTML */
+.contact_block {
+
+
+
+    width: 100%;
+    height: 250px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+
+.img_contact_link {
+    width: 3rem;
+    height: auto;
+    transition: width .2s;
+
+}
+
+.img_contact_link:hover {
+    width: 3.1rem;
+} 
+.contact_link {}
+
+.contact_link:hover {}
+
+
+/* CONTACT.HTML     end*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*  MEDIA */
+
+/* DESCTOP
+
+
+
+/* default styles here for older browsers. 
+       I tend to go for a 600px - 960px width max but using percentages
+    */
+@media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
+}
+
+@media only screen and (min-width: 1440px) {
+    /* styles for browsers larger than 1440px; */
+}
+
+@media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+    .container {
+        max-width: 98%;
+    }
+
+    /* header */
+    .SiteName,
+    .Site_description {
+        display: none;
+    }
+
+    /* nav */
+    .nav_links {
+        display: none;
+    }
+
+    .nav_links_item {
+        font-size: 1rem;
+    }
+
+
+    .checkbox {
+        display: inline-block;
+
+        opacity: 0;
+    }
+
+    .burger_btn img {
+        display: inline-block;
+    }
+
+    .nav_links {
+        margin-right: 48px;
+        width: 100%;
+    }
+
+
+    /* Main */
+
+    .content_block {
+        min-width: 98%;
+    }
+
+    .content_block h3 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 768px) {
+
+    /* default iPad screens */
+    /* header */
+
+    .SiteName {
+        padding: 1rem 0;
+    }
+
+    .Site_description {
+        padding: 0 0;
+    }
+
+
+    .nav_links {
+        display: flex;
+    }
+
+    .content_block {
+        min-width: 98%;
+    }
+}
+
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+
+    .nav_links {
+        display: flex;
+        /* 
+        position: absolute;
+
+        right: 6px; */
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+=======
+.border {
+    border: 1px #000 solid;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/*       */
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    max-width: 1024px;
+    height: 100%;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.home_logoIMG {
+    width: 2rem;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 52px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    background: #fff;
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(34, 60, 80, 0.12);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(34, 60, 80, 0.12);
+    box-shadow: 0px 3px 5px 0px rgba(34, 60, 80, 0.12);
+}
+
+.nav_links {
+    display: flex;
+    justify-content: flex-end;
+
+    position: absolute;
+
+    right: 10px;
+    max-width: 340px;
+
+
+
+}
+
+/* toggle */
+.burger_btn img,
+.burger_close img {
+    /* display: none; */
+
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    width: 2rem;
+    height: 2rem;
+
+    display: none;
+}
+
+
+
+
+.checkbox {
+    position: absolute;
+    right: 3px;
+    top: 6px;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    z-index: 2;
+
+    display: none;
+}
+
+.checkbox:checked~.nav_links {
+    display: flex;
+
+    /* display: none; */
+}
+
+.checkbox:checked~.burger_btn img {
+    opacity: 0;
+    transition: all 2s;
+
+    transform: rotate(180deg);
+
+}
+
+.checkbox:checked~.burger_close img {
+    opacity: 1;
+    display: inline-block;
+    transition: transform 2s ease-in;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: rotate(90deg);
+    top: 12px;
+    right: 11px;
+
+}
+
+
+.nav_links_item {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    margin: 0 .2rem;
+
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+}
+
+.content_block {
+    max-width: 400px;
+    height: auto;
+
+    margin: 5px 5px;
+    padding: 2px
+}
+
+/*  MEDIA */
+
+/* DESCTOP
+
+@media screen and (min-width:768px and max-width: 1024px) {
+    .nav_links {
+        display: flex;
+    }
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+
+
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        max-width: 400px;
+    }
+
+
+    .nav_links {
+        display: none;
+    }
+
+    .nav_links_item {
+        font-size: 1rem;
+    }
+
+    .checkbox {
+        display: inline-block;
+
+        opacity: 0;
+    }
+
+    .burger_btn img {
+        display: inline-block;
+    }
+
+    .nav_links {
+        margin-right: 36px;
+        width: 100%;
+    }
+
+} */
+
+
+/* default styles here for older browsers. 
+       I tend to go for a 600px - 960px width max but using percentages
+    */
+@media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
+}
+
+@media only screen and (min-width: 1440px) {
+    /* styles for browsers larger than 1440px; */
+}
+
+@media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* styles for mobile browsers smaller than 480px; (iPhone) */
+
+    .container {
+        max-width: 400px;
+    }
+
+
+    .nav_links {
+        display: none;
+    }
+
+    .nav_links_item {
+        font-size: 1rem;
+    }
+
+
+    .checkbox {
+        display: inline-block;
+
+        opacity: 0;
+    }
+
+    .burger_btn img {
+        display: inline-block;
+    }
+
+    .nav_links {
+        margin-right: 48px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media only screen and (device-width: 768px) {
+    /* default iPad screens */
+
+    .nav_links {
+        display: flex;
+
+
+    }
+}
+
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+
+    .nav_links {
+        display: flex;
+        /* 
+        position: absolute;
+
+        right: 6px; */
+    }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+>>>>>>> main
+}

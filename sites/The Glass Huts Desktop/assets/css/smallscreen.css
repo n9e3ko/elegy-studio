@@ -1,0 +1,320 @@
+.container {
+    width: 1024px;
+
+    position: relative;
+    margin: 0 auto;
+
+
+}
+
+header {
+    position: relative;
+    width: 1024px;
+
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    position: absolute;
+
+    left: 86px;
+}
+
+.nav_list {
+    position: absolute;
+    top: 0px;
+    left: 220px;
+
+    margin: 0 0 0 20px;
+}
+
+.button_buy {
+    width: 160px;
+    height: 40px;
+}
+
+
+
+.price_btn {
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    left: 263px;
+    top: 10px;
+    background-color: #E9ECE0;
+}
+
+.description {
+    position: absolute;
+    width: 465px;
+    height: 351px;
+    left: 50px;
+    top: 15px;
+}
+
+.block_2 div img {
+    position: absolute;
+    width: 453px;
+    height: auto;
+    left: 522px;
+    top: 66px;
+}
+
+
+.block_1 {
+    background-image: url(/assets/img/content/Intro.jpg);
+    width: 98%;
+    height: 701px;
+    position: relative;
+    margin: 0 10px 0 10px;
+}
+
+.titleBlock_1 {
+
+    position: absolute;
+    top: 19px;
+    right: 12px;
+    width: 651px;
+    height: 190px;
+
+}
+
+.titleBlock_1 h1 {
+    font-size: 60px;
+}
+
+.img_block1 img,
+.img_block2 img,
+.img_block3 img {
+    width: 320px;
+    height: auto;
+}
+
+.img_block1,
+.img_block2,
+.img_block3 {
+    width: 320px;
+    height: auto;
+}
+
+.img_block1 {
+    position: absolute;
+    left: 15px;
+    top: 0px;
+}
+
+.img_block2 {
+    position: absolute;
+    left: 352px;
+    top: 0px;
+}
+
+.img_block3 {
+    position: absolute;
+    left: 688px;
+    top: 0px;
+}
+
+.img_player {
+    position: absolute;
+    right: 0px;
+    bottom: 14px;
+
+}
+
+.map {
+    max-width: 511px;
+    height: 472px;
+    background-image: url(/assets/img/content/Screen\ Shot\ 2021-02-26\ at\ 16.18\ 1.png);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description_Forest {
+    /* width: 701px; */
+    height: 650px;
+    position: absolute;
+    left: 544px;
+    top: 49px;
+}
+
+.Facilities_title_text {
+    position: absolute;
+    width: 151px;
+    height: 40px;
+    left: 443px;
+    top: 111px;
+}
+
+.Facilities_Ico_block {
+    top: 250px;
+}
+
+
+.img_blockOf6_left img {
+
+
+    width: 611px;
+    height: auto;
+}
+
+.img_blockOf6_right img {
+    width: 511px;
+    height: auto;
+
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+.Newsletter_title {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+.Newsletter [type^=email] {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+}
+
+.Newsletter [type=image] {
+    position: absolute;
+    top: 130px;
+    left: 452px;
+}
+
+.promo_10 {
+    left: 50px;
+
+}
+
+.copy {
+    left: 50px;
+}
+
+.partners [rel=TERMS] {
+    left: 580px;
+}
+
+.partners [rel=CENCELLATION] {
+    left: 582px;
+    top: 136px;
+}
+
+.partners [rel=PRIVACY] {
+    left: 582px;
+    top: 165px;
+}
+
+
+
+.partners_imgBlock [alt=PayPal] {
+
+    position: absolute;
+    top: 210px;
+    left: 586px;
+
+}
+
+.partners_imgBlock [alt=MasterCard] {
+
+    position: absolute;
+    top: 210px;
+
+    left: 676px;
+
+}
+
+.partners_imgBlock [alt=VISA] {
+
+    position: absolute;
+    top: 210px;
+
+    left: 764px;
+
+}
+
+.partners_imgBlock [alt=Transfer_Bank] {
+
+    position: absolute;
+    top: 210px;
+
+    left: 851px;
+
+}
+
+
+/* .btn_size_1 {
+
+    left: 65px;
+    top: 402px;
+} */
+
+
+
+.btn2_src1024 {
+    width: 264px;
+    height: 80px;
+    position: absolute;
+    left: 65px;
+    top: 402px;
+}
+
+
+.price_btn_src1024 {
+    top: 402px;
+    left: 328px;
+}
+
+.btn_sizeLarge {
+    width: 264px;
+    height: 80px;
+
+
+
+}
+
+.BtnL1_scr1024 {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 262px;
+    height: 80px;
+}
+
+.Title_block_7 {
+    font-size: 36px;
+}
+
+
+/* PAYMENT ------------------------------*/
+.mainPayment {
+    margin-top: 120px;
+}
+
+.persInfo,
+.btn_confirm,
+.cardInfo,
+.comment {
+    margin-left: 30px;
+    width: 52%;
+    height: 40%;
+}
+
+.total {
+    width: 38%;
+    height: 24%;
+    right: 40px;
+
+}
+
+.persInfo input {
+    max-width: 244px;
+}

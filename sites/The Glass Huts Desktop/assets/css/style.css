@@ -1,0 +1,980 @@
+/* 
+    УВАГА!! ПІДКЛЮЧЕНО reset.css
+ */
+
+
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 35px;
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+
+}
+
+.container {
+    width: 1408px;
+    position: relative;
+
+
+}
+
+/* 
+    HEADER
+ */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1408px;
+
+    /* padding: 0 0 0 20px; */
+
+    position: fixed;
+    top: 0;
+
+    z-index: 1;
+
+    font-family: DIN;
+
+    height: 100px;
+
+    justify-content: space-between;
+
+    background: #fff;
+}
+
+.logo {
+    margin: 0 0 0 20px;
+}
+
+/* ----- */
+
+main {
+    margin-top: 100px;
+    z-index: 2;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 20px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 490px;
+    height: 100px;
+    cursor: pointer;
+
+
+
+    /* position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 0; */
+
+}
+
+.nav_list_item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flag {
+    display: flex;
+
+}
+
+.nav_list_item:hover {
+    font-weight: 600;
+}
+
+/* hello bootstrap ^_^ */
+.pl-146 {
+    padding-left: 146px;
+}
+
+.w-100 {
+    width: 100%;
+    height: auto;
+}
+
+.mr-60 {
+    margin-right: 60px;
+}
+
+.p_absolute {
+    position: absolute;
+}
+
+.d-none {
+    display: none;
+}
+
+.right-0 {
+    right: 0;
+}
+/* ^^^^^^ */
+
+
+.button_buy {
+    width: 200px;
+    height: 60px;
+    right: 32px;
+    /* top: calc(50% - 60px/2); */
+
+
+    background: #5B6460;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    text-transform: uppercase;
+    font-family: DIN;
+}
+
+.button_buy:hover {
+    background: #808E88;
+
+}
+
+.button_buy a {
+    text-decoration: none;
+    color: inherit;
+
+    width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* MAIN
+-------------- */
+
+.block_1 {
+    background-image: url(/assets/img/content/Intro.jpg);
+    width: 100%;
+    height: 701px;
+
+    position: relative;
+
+}
+
+
+.titleBlock_1 {
+    position: absolute;
+    /* РОзміщення по відоношунню до блока 1*/
+    top: 88px;
+    right: 59px;
+
+    width: 763px;
+    height: 190px;
+
+}
+
+.between_the_block_1 {
+
+
+    position: absolute;
+    width: 383px;
+    height: 100px;
+    left: 146px;
+    top: 650px;
+}
+
+.btn_size_1 {
+    width: 263px;
+    height: 100px;
+}
+
+.price_btn {
+    width: 120px;
+    height: 100px;
+
+
+    background-color: #E9ECE0;
+}
+
+.price1_position {
+    position: absolute;
+
+    left: 263px;
+    top: 0;
+
+}
+
+.price_btn .btn_small_text {
+    position: absolute;
+    width: 25px;
+    height: 18px;
+    left: calc(50% - 25px/2 - 18.5px);
+    top: calc(50% - 18px/2 - 19px);
+
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+
+
+    color: #333333;
+}
+
+.price_btn .btn_small_text2 {
+    position: absolute;
+    width: 48px;
+    height: 18px;
+    left: calc(50% - 48px/2 + 5px);
+    top: calc(50% - 18px/2 + 19px);
+
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+
+
+    color: #333333;
+
+}
+
+.price {
+    position: absolute;
+    width: 60px;
+    height: 28px;
+    left: calc(50% - 60px/2 - 1.23px);
+    top: calc(50% - 28px/2 - 0.22px);
+
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+
+
+    /* Gray 1 */
+
+    color: #333333;
+}
+
+
+.titleBlock_1 h1 {
+    font-size: 72px;
+    color: #fff;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 72px;
+}
+
+.titleBlock_1 p {
+    position: absolute;
+    /* РОзміщення по відоношунню до блока 1*/
+    bottom: 2px;
+    right: 86px;
+    text-align: center;
+
+    color: #fff;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+/* ----------block 1 ^ ----------- */
+/* Block 2 // The Cabins */
+
+.block_2 {
+    position: relative;
+    height: 596px;
+
+}
+
+.description {
+    position: absolute;
+    width: 465px;
+    height: 351px;
+    left: 147px;
+    top: 89px;
+
+}
+
+.description_text_1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 187% */
+
+
+    color: #000000;
+
+    margin-top: 60px;
+
+}
+
+.description_title_1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    /* identical to box height, or 100% */
+}
+
+.description_more {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+
+    /* forest */
+
+    margin-top: 34px;
+    color: #5B6460;
+}
+
+.block_2 {
+
+    position: absolute;
+    margin-top: 150px;
+
+}
+
+.block_2 div img {
+    position: absolute;
+    width: 693px;
+    height: 438px;
+    left: 717px;
+    top: 2px;
+}
+
+.block_3 {
+    position: relative;
+    top: 700px;
+    height: 688px;
+    margin-bottom: 2px;
+}
+
+.img_block1 {
+    position: absolute;
+    width: 432px;
+    height: 387px;
+    left: 33px;
+    top: 0px;
+
+}
+
+.img_block2 {
+    position: absolute;
+    width: 432px;
+    height: 387px;
+    left: 489px;
+    top: 0px;
+}
+
+.img_block3 {
+    position: absolute;
+    width: 432px;
+    height: 387px;
+    left: 946px;
+    top: 0px;
+}
+
+.img_player {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+
+}
+
+.block_4 {
+    position: relative;
+    top: 500px;
+    width: 100%;
+
+    background-color: #E9ECE0;
+}
+
+.map {
+    max-width: 701px;
+    height: 650px;
+    background-image: url(/assets/img/content/Screen\ Shot\ 2021-02-26\ at\ 16.18\ 1.png);
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3E443E;
+    opacity: 0.4;
+}
+
+
+.map img {
+
+    position: absolute;
+
+    width: 176px;
+    height: 176px;
+}
+
+.description_Forest {
+    /* width: 701px; */
+    height: 650px;
+
+    position: absolute;
+
+    left: 814px;
+    top: 148px;
+
+
+}
+
+.description_Forest div {
+    width: 465px;
+    height: 351px;
+
+}
+
+.title_forest {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    /* identical to box height, or 100% */
+
+
+    /* forest */
+
+    color: #5B6460;
+}
+
+.desc_forest_text {
+    margin-top: 60px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 187% */
+
+
+    /* Gray 1 */
+
+    color: #333333;
+
+}
+
+
+.desc_rorest_more {
+    font-family: Open Sans;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+
+    /* forest */
+
+    color: #5B6460;
+
+    text-decoration: underline;
+}
+
+.block_5 {
+    position: relative;
+    height: 971px;
+    background: #5B6460;
+    top: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.Facilities_title_text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    position: absolute;
+    width: 151px;
+    height: 40px;
+    left: 629px;
+    top: 150px;
+
+}
+
+.Facilities_title_block {
+    width: 100%;
+    height: auto;
+
+
+}
+
+.Facilities_Ico_block {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 300px;
+    width: 800px;
+    height: 550px;
+    flex-wrap: wrap;
+
+
+}
+
+.Facilities_Ico {
+    width: 200px;
+    height: 133px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.Facilities_Ico img {
+    width: 70px;
+    height: 70px;
+}
+
+
+.block_6 {
+
+
+    width: 100%;
+    height: 559px;
+
+    position: relative;
+    top: 500px;
+
+    display: flex;
+}
+
+.More_about_us {
+    position: absolute;
+    top: 195px;
+    left: 44.5%;
+    background: url(/assets/img/content/more\ about\ us.svg);
+
+    width: 157px;
+    height: 157px;
+}
+
+
+
+
+.img_blockOf6_left {
+    width: 50%;
+    height: 559px;
+}
+
+.img_blockOf6_right {
+
+    width: 50%;
+    height: 559px;
+}
+
+.block_7 {
+    height: 617px;
+    position: relative;
+    top: 500px;
+
+    margin-bottom: 425px;
+
+
+    display: flex;
+
+}
+
+.left_description_block_7 {
+    width: 50%;
+    position: relative;
+
+}
+
+.Title_block_7 {
+    position: absolute;
+    top: 161px;
+    left: 150px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height, or 150% */
+
+
+    /* forest */
+
+    color: #5B6460;
+
+}
+
+
+.left_description_block_7 .city {
+    position: absolute;
+    top: 262px;
+    left: 150px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+
+    color: #000000;
+}
+
+.link_tell {
+    position: absolute;
+    top: 312px;
+    left: 150px;
+
+
+
+}
+
+.link_mail,
+.link_tell {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.link_mail:hover,
+.link_tell:hover {
+    text-decoration: underline;
+}
+
+.link_mail {
+
+    position: absolute;
+    top: 342px;
+    left: 150px;
+
+}
+
+.img_buy_btn {
+    width: 50%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    top: -70px;
+
+}
+
+.img_buy_btn img {
+    width: 383px;
+    height: 188px;
+
+
+
+}
+
+.btn_posFulScr {
+    position: absolute;
+    top: 402px;
+    left: 161px;
+}
+
+.price2_position {
+    position: absolute;
+    top: 403px;
+    left: 422px;
+}
+
+/* FOOTER */
+
+footer {
+    height: 477px;
+
+
+    display: flex;
+
+    position: relative;
+    /* top: 500px; */
+    bottom: 0px;
+
+    background-color: #5B6460;
+}
+
+.Newsletter_title {
+    position: absolute;
+    top: 106px;
+    left: 146px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+
+    color: #FFFFFF;
+}
+
+.Newsletter [type^=email] {
+    position: absolute;
+    top: 178px;
+    left: 146px;
+
+    width: 432px;
+    height: 30px;
+
+    padding-left: 10px;
+    color: #FFFFFF;
+    background: #5B6460;
+    border: 0px solid #ccc;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.Newsletter [type^=email]::placeholder {
+    font-family: Open Sans;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+
+
+    color: #FFFFFF;
+}
+
+.Newsletter [type=text]:focus {
+    background: #5B6460;
+    border: none;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.Newsletter [type=image] {
+    position: absolute;
+    top: 185px;
+    left: 547px;
+
+    width: 34px;
+
+}
+
+.Newsletter [type=image]:hover {
+    top: 183px;
+}
+
+.promo_10 {
+    position: absolute;
+    top: 224px;
+    left: 146px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 187% */
+
+
+    color: #FFFFFF;
+
+    opacity: 0.7;
+}
+
+.copy {
+    position: absolute;
+    width: 145px;
+    height: 30px;
+    left: 146px;
+    top: 347px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    /* identical to box height, or 214% */
+
+
+    /* gray */
+
+    color: #EFEFEF;
+
+    opacity: 0.7;
+}
+
+.partners_imgBlock [alt=PayPal] {
+    color: red;
+
+    position: absolute;
+    top: 180px;
+    left: 965px;
+
+}
+
+.partners_imgBlock [alt=MasterCard] {
+    color: red;
+
+    position: absolute;
+    top: 180px;
+    left: 1055px;
+
+}
+
+.partners_imgBlock [alt=VISA] {
+    color: red;
+
+    position: absolute;
+    top: 180px;
+    left: 1143px;
+
+}
+
+.partners_imgBlock [alt=Transfer_Bank] {
+    color: red;
+
+    position: absolute;
+    top: 180px;
+    left: 1230px;
+
+}
+
+
+.partners [rel=TERMS] {
+    position: absolute;
+    top: 105px;
+    left: 784px;
+
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    opacity: 0.7;
+
+
+    text-decoration: none;
+
+}
+
+.partners a:hover {
+    opacity: 1;
+
+}
+
+.partners [rel=CENCELLATION] {
+    position: absolute;
+    top: 105px;
+    left: 979px;
+
+    text-decoration: none;
+
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    opacity: 0.7;
+
+
+}
+
+.partners [rel=PRIVACY] {
+    position: absolute;
+    top: 105px;
+    left: 1165px;
+
+    text-decoration: none;
+
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    opacity: 0.7;
+
+
+}

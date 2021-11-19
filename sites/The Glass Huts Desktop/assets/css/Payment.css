@@ -1,0 +1,416 @@
+/* 
+    УВАГА!! ПІДКЛЮЧЕНО reset.css
+ */
+
+.border {
+    border: lawngreen 1px solid;
+    background-color: rgba(173, 216, 230, 0.408);
+}
+
+.container {
+    /* height: 100vh; */
+}
+
+.mainPayment {
+    /* display: flex; */
+    margin-top: 200px;
+    margin-bottom: 135px;
+
+    height: 1468px;
+
+}
+
+
+/* CONTENT */
+main {}
+
+.btn_confirm {
+    max-width: 170px;
+    width: 100%;
+    max-height: 36px;
+    height: 100%;
+
+    margin-left: 146px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: DIN;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 36px;
+    /* identical to box height, or 225% */
+
+    text-transform: uppercase;
+
+    /* Gray 1 */
+
+    color: #333333;
+}
+
+.btn_confirm a {
+    width: 100%;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+/* .btn_confirm a:hover {
+    border-bottom: crimson 1.3px solid;
+    transition: 3s;
+} */
+
+.link_hover::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+
+
+}
+
+.link_hover:hover::after {
+    width: 100%;
+
+}
+
+.return_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn_confirm img {
+    width: 33px;
+    height: auto;
+}
+
+.persInfo {
+    position: absolute;
+    top: 91px;
+
+    max-width: 660px;
+    width: 100%;
+    max-height: 344px;
+    height: 100%;
+
+
+    margin-left: 146px;
+}
+
+.cardInfo {
+    position: absolute;
+    top: 538px;
+    max-width: 660px;
+    width: 100%;
+
+    max-height: 346px;
+    height: 100%;
+
+
+    margin-left: 146px;
+
+}
+
+.comment {
+    position: absolute;
+    top: 984px;
+
+    max-width: 660px;
+    width: 100%;
+
+    max-height: 338px;
+    height: 100%;
+
+
+    margin-left: 146px;
+
+}
+
+.total {
+    position: absolute;
+    right: 50px;
+    top: 0;
+
+    max-width: 432px;
+    width: 100%;
+    max-height: 410px;
+    height: 100%;
+
+    margin-left: 146px;
+
+}
+
+.persInfo h3 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+
+
+    /* green */
+
+    color: #5B6460;
+}
+
+.persInfo hr,
+.cardInfo hr {
+    border-top: 1px solid #5B6460;
+    opacity: 0.5;
+    margin: 22px 0;
+}
+
+/* 
+.persInfo input {
+    max-width: 307px;
+    width: 100%;
+    height: 50px;
+
+    padding-left: 22px;
+
+    position: relative;
+
+    border: 0.7px solid #5B6460;
+    box-sizing: border-box;
+
+    font-size: 16px;
+} */
+
+
+/*  FORMS */
+
+.persInfo form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-item {
+    width: 312px;
+    height: auto;
+
+    position: relative;
+
+
+}
+
+
+
+/* .persInfo label {
+    position: absolute;
+    left: 22px;
+    top: 16px;
+    font-size: 16px;
+
+} */
+
+
+.persInfo input {
+    max-width: 307px;
+    width: 100%;
+    height: 50px;
+
+    /* position: relative; */
+
+    border: 0.7px solid #5B6460;
+    box-sizing: border-box;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+
+    padding: 16px 0 16px 22px;
+    /* margin-top: 14px; */
+
+}
+
+
+/* ----codepen */
+
+.form-item input:focus~label,
+.form-item input:valid~label {
+    transform: translateY(-10px);
+    font-size: 12px;
+    color: #4158d0;
+}
+
+
+.form-item label {
+    position: absolute;
+    bottom: 10px;
+    left: 22px;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+
+/*  */
+
+.wrapper {
+    width: 307px;
+    height: 50px;
+
+    margin-bottom: 24px;
+
+    position: relative;
+}
+
+.wrapper .input-data {
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .input-data input {
+    height: 100%;
+    width: 100%;
+    border: 0.7px solid #5B6460;
+    background: none;
+
+    padding: 16px 0 13px 22px;
+
+    outline: none;
+
+    position: absolute;
+
+
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.input-data input:focus~label,
+.input-data input:valid~label {
+    transform: translateY(-13px);
+    font-size: 12px;
+    color: #828282;
+}
+
+.wrapper .input-data label {
+    position: absolute;
+    bottom: 8px;
+    left: 22px;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    /* line-height: 18px; */
+}
+
+.input-data .underline {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+}
+
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #4158d0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus~.underline:before,
+.input-data input:valid~.underline:before {
+    transform: scaleX(1);
+}
+
+.flag_phone_number {
+    width: 52px;
+    height: 48px;
+    border: 0.7px solid #5B6460;
+    border-right: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+}
+
+.flag_phone_number img {
+    width: 25px;
+    height: 25px;
+}
+
+.input-data input[type=tel] {
+    width: 255px;
+    position: absolute;
+    right: 0;
+}
+
+.phoneLabel {
+    position: absolute;
+    left: 72px !important;
+}
+
+/*  ================ Pay with ============= */
+.header_cardInfo {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.ico_block {
+    width: 184px;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.ico_block img {
+    padding-left: 3px;
+    width: 35px;
+    height: auto;
+
+    filter: invert(40%) sepia(6%) saturate(471%) hue-rotate(101deg) brightness(89%) contrast(86%);
+}
+
+
+.title_cardInfo {
+
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+
+
+    /* green */
+
+    color: #5B6460;
+}
+
+
+/* credit od debit cards */
+.view_settings_001 {
+    width: 100%;
+}

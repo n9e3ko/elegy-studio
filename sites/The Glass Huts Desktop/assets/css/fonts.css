@@ -1,0 +1,39 @@
+@font-face {
+    font-family: DIN;
+    src: url(/assets/fonts/DIN/D-DIN.ttf);
+}
+
+@font-face {
+    font-family: DIN-Bold;
+    src: url(/assets/fonts/DIN/D-DIN-Bold.ttf);
+}
+
+@font-face {
+    font-family: DIN-Italic;
+    src: url(/assets/fonts/DIN/D-DIN-Italic.ttf);
+}
+
+@font-face {
+    font-family: DIN-Condensed-Bold;
+    src: url(/assets/fonts/DIN/D-DINCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: DIN-Condensed;
+    src: url(/assets/fonts/DIN/D-DINCondensed.ttf);
+}
+
+@font-face {
+    font-family: DIN-Exp-Bold;
+    src: url(/assets/fonts/DIN/D-DINExp-Bold.ttf);
+}
+
+@font-face {
+    font-family: DIN-Exp-Italic;
+    src: url(/assets/fonts/DIN/D-DINExp-Italic.ttf);
+}
+
+@font-face {
+    font-family: DINExp;
+    src: url(/assets/fonts/DIN/D-DINExp.ttf);
+}
