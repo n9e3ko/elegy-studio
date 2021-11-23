@@ -76,6 +76,12 @@ body {
     box-shadow: 5px 7px 14px -4px rgba(0, 0, 0, 0.33);
 }
 
+.shadow-hover:hover {
+    -webkit-box-shadow: 5px 7px 14px -4px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: 5px 7px 14px -4px rgba(0, 0, 0, 0.33);
+    box-shadow: 5px 7px 14px -4px rgba(0, 0, 0, 0.33);
+}
+
 /* HEADER  */
 
 .header {
@@ -140,6 +146,8 @@ body {
     margin-bottom: 1rem;
 
     background: var(--bg-color);
+    border: inherit;
+    border-radius: inherit;
 }
 
 .nav_links {
@@ -360,15 +368,19 @@ address a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
 }
 
 .contact_block div {
+
     display: flex;
     align-content: center;
     align-items: center;
+    flex-wrap: wrap;
+
+    padding: 10px 10px;
 }
 
 .contact_block div a {
@@ -430,9 +442,12 @@ address a:hover {
 
     .container {
         max-width: 98%;
+        padding: 0 10px;
+        height: 95vh;
     }
 
     /* header */
+    
     .SiteName,
     .Site_description {
         display: none;
@@ -465,6 +480,7 @@ address a:hover {
 
 
     /* Main */
+    
 
     .content_block {
         min-width: 98%;
@@ -472,6 +488,23 @@ address a:hover {
 
     .content_block h3 {
         font-size: 1rem;
+    }
+
+    /* Contact.html */
+
+    .contact_block {
+        flex-direction: row;
+        align-content: flex-start;
+        align-items: flex-start;
+        -webkit-box-shadow: none;
+        -moz-box-shadwo: none;
+        box-shadow: none;
+    }
+
+    .contact_block div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -544,6 +577,7 @@ address a:hover {
         margin: 0 auto;
 
         position: relative;
+
     }
 
     .home_logoIMG {
@@ -661,12 +695,13 @@ address a:hover {
         margin: 5px 5px;
         padding: 2px
     }
+}
 
 
 
-    /*  MEDIA */
+/*  MEDIA */
 
-    /* DESCTOP
+/* DESCTOP
 
 @media screen and (min-width:768px and max-width: 1024px) {
     .nav_links {
@@ -716,26 +751,27 @@ address a:hover {
 } */
 
 
-    /* default styles here for older browsers. 
+/* default styles here for older browsers. 
        I tend to go for a 600px - 960px width max but using percentages
     */
-    @media only screen and (min-width: 960px) {
-        /* styles for browsers larger than 960px; */
-    }
+@media only screen and (min-width: 960px) {
+    /* styles for browsers larger than 960px; */
+}
 
-    @media only screen and (min-width: 1440px) {
-        /* styles for browsers larger than 1440px; */
-    }
+@media only screen and (min-width: 1440px) {
+    /* styles for browsers larger than 1440px; */
+}
 
-    @media only screen and (min-width: 2000px) {
-        /* for sumo sized (mac) screens */
-    }
+@media only screen and (min-width: 2000px) {
+    /* for sumo sized (mac) screens */
+}
 
-    @media only screen and (max-device-width: 480px) {
-        /* styles for mobile browsers smaller than 480px; (iPhone) */
+/* @media only screen and (max-device-width: 480px) {
+         
 
         .container {
             max-width: 400px;
+            
         }
 
 
@@ -764,52 +800,53 @@ address a:hover {
         }
 
         /* Contact.html */
-        .contact_block {
-            flex-direction: column;
 
-        }
+
+
+*/
+/* max-device-width: 480px) */
+
+
+
+
+
+
+
+@media only screen and (device-width: 768px) {
+    /* default iPad screens */
+
+    .nav_links {
+        display: flex;
+
+
     }
 
-    /* max-device-width: 480px) */
-
-
-
-
-
-
-
-    @media only screen and (device-width: 768px) {
-        /* default iPad screens */
-
-        .nav_links {
-            display: flex;
-
-
-        }
-
-        .contact_block {
-            flex-direction: column;
-        }
+    .contact_block {
+        flex-direction: column;
+        justify-content: flex-start;
     }
+}
 
-    /* different techniques for iPad screening */
-    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-        /* For portrait layouts only */
+/* different techniques for iPad screening */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
 
-        .nav_links {
-            display: flex;
-            /* 
+    .nav_links {
+        display: flex;
+        /* 
         position: absolute;
 
         right: 6px; */
-        }
-
-        .contact_block {
-            flex-direction: column;
-        }
     }
 
-    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        /* For landscape layouts only */
-
+    .contact_block {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        justify-content: flex-start;
     }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    /* For landscape layouts only */
+
+}
